@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Title({primitive}) {
+export default function Title({primitive, children}) {
     
     switch (primitive) {
         case 'h1':
@@ -18,8 +18,10 @@ export default function Title({primitive}) {
         case 'h5':
           return <h5>{children}</h5>
           break;
+        case 'h6':
+          return <h6>{children}</h6>
+          break;
         default :
           return <span>{children}</span>
       }
-
 }
