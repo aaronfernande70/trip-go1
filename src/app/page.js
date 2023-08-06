@@ -1,7 +1,5 @@
 
 import Image from "next/image";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-// import { Parallax, ParallaxLayer, IParallax } from '@react-spring/parallax'
 
 export default function Home() {
   return (
