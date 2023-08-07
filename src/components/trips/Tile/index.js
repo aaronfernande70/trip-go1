@@ -1,9 +1,11 @@
 import Image from "next/image";
 import React from "react";
 import Title from "../../../Typography/Title";
-import placeholder from "../../../resources/images/placeholder.jpg";
 import Body from "../../../Typography/Body";
-import Chip from '../../common/Chip'
+import Chip from '../../common/Chip';
+
+
+import placeholder from "../../../resources/images/placeholder.jpg";
 
 export default function Tile({ imageSrc, imageAlt, name, description, category }) {
   return (
