@@ -8,7 +8,7 @@ export const Header = () => {
             <span className='text-lg font-bold'>GO</span>
         </div>
         <div id="navBar">
-            <nav className='text-sm'>
+            <nav className='text-lg'>
                 <ul className='flex gap-6'>
                     <li>
                         <button className='hover:underline-offset-4 hover:underline'>

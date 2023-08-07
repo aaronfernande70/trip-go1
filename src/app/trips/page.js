@@ -1,5 +1,4 @@
 
-import Image from "next/image";
 import Tile from '../../components/trips/Tile'
 
 export default function Home() {
@@ -7,41 +6,33 @@ export default function Home() {
         {
             name : "mountain 1" ,
             location: "abc",
-            thumbnail: "https://media.istockphoto.com/id/1288385045/photo/snowcapped-k2-peak.jpg?s=612x612&w=0&k=20&c=sfA4jU8kXKZZqQiy0pHlQ4CeDR0DxCxXhtuTDEW81oo=",
-            description: "abc abc abc lor abc abc abc lorabc abc abc lorabc abc abc lorabc abc abc lorabc abc abc lor"
+            thumbnail: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dmountains&psig=AOvVaw2U8fs34ScvMVRG8nz8K-yL&ust=1691506326827000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLD9y6TmyoADFQAAAAAdAAAAABAE",
+            category: "adventure",
+            description: "The beautiful Hvalfjörður, with its winding roads and pristine hiking paths, is being rediscovered by travelers and developers alike."
         },
         {
-            name : "mountain 2" ,
+            name : "mountain 1" ,
             location: "abc",
-            thumbnail: "https://images.prismic.io/visiticeland/b578b517-8fba-4b4e-a986-21f4ad63fbad_sudurland_hveragerdi001.jpg.JPG?ixlib=gatsbyFP&auto=compress%2Cformat&fit=max&w=1946&h=1297",
-            description: "abc abc abc lor abc abc abc lorabc abc abc lorabc abc abc lorabc abc abc lorabc abc abc lor"
+            thumbnail: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dmountains&psig=AOvVaw2U8fs34ScvMVRG8nz8K-yL&ust=1691506326827000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLD9y6TmyoADFQAAAAAdAAAAABAE",
+            category: "adventure",
+            description: "The beautiful Hvalfjörður, with its winding roads and pristine hiking paths, is being rediscovered by travelers and developers alike."
         },
         {
-            name : "mountain 3" ,
+            name : "mountain 1" ,
             location: "abc",
-            thumbnail: "https://media.istockphoto.com/id/1288385045/photo/snowcapped-k2-peak.jpg?s=612x612&w=0&k=20&c=sfA4jU8kXKZZqQiy0pHlQ4CeDR0DxCxXhtuTDEW81oo=",
-            description: "abc abc abc lor abc abc abc lorabc abc abc lorabc abc abc lorabc abc abc lorabc abc abc lor"
+            thumbnail: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dmountains&psig=AOvVaw2U8fs34ScvMVRG8nz8K-yL&ust=1691506326827000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLD9y6TmyoADFQAAAAAdAAAAABAE",
+            category: "adventure",
+            description: "The beautiful Hvalfjörður, with its winding roads and pristine hiking paths, is being rediscovered by travelers and developers alike."
         },
-        {
-            name : "mountain 4" ,
-            location: "abc",
-            thumbnail: "https://media.istockphoto.com/id/1288385045/photo/snowcapped-k2-peak.jpg?s=612x612&w=0&k=20&c=sfA4jU8kXKZZqQiy0pHlQ4CeDR0DxCxXhtuTDEW81oo=",
-            description: "abc abc abc lor abc abc abc lorabc abc abc lorabc abc abc lorabc abc abc lorabc abc abc lor"
-        },
-        {
-            name : "mountain 5" ,
-            location: "abc",
-            thumbnail: "https://media.istockphoto.com/id/1288385045/photo/snowcapped-k2-peak.jpg?s=612x612&w=0&k=20&c=sfA4jU8kXKZZqQiy0pHlQ4CeDR0DxCxXhtuTDEW81oo=",
-            description: "abc abc abc lor abc abc abc lorabc abc abc lorabc abc abc lorabc abc abc lorabc abc abc lor"
-        },
+        
     ]
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <section className="flex flex-wrap">
+      <section className="flex flex-wrap gap-5">
         {trips.map((trip)=>{
             return(
                 <>
-                    <Tile name={trip.name} imageSrc={trip.thumbnail} imageAlt={trip.name} />
+                    <Tile name={trip.name} imageSrc={trip.thumbnail} imageAlt={trip.name} description={trip.description} category={trip.category}/>
                 </>
             )
         })}
