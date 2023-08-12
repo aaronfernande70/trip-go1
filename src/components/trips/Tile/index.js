@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Title from "../../../Typography/Title";
 import Body from "../../../Typography/Body";
+// import Body from "../../../Typography/Body";
 import Chip from '../../common/Chip';
 
 
