@@ -7,21 +7,21 @@ export default function Home() {
             name : "mountain 1" ,
             location: "abc",
             thumbnail: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dmountains&psig=AOvVaw2U8fs34ScvMVRG8nz8K-yL&ust=1691506326827000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLD9y6TmyoADFQAAAAAdAAAAABAE",
-            category: "adventure",
+            category: ["adventure"],
             description: "The beautiful Hvalfjörður, with its winding roads and pristine hiking paths, is being rediscovered by travelers and developers alike."
         },
         {
-            name : "mountain 1" ,
+            name : "mountain 2" ,
             location: "abc",
             thumbnail: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dmountains&psig=AOvVaw2U8fs34ScvMVRG8nz8K-yL&ust=1691506326827000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLD9y6TmyoADFQAAAAAdAAAAABAE",
-            category: "adventure",
+            category: ["adventure", "city"],
             description: "The beautiful Hvalfjörður, with its winding roads and pristine hiking paths, is being rediscovered by travelers and developers alike."
         },
         {
-            name : "mountain 1" ,
+            name : "mountain 3" ,
             location: "abc",
             thumbnail: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngwing.com%2Fen%2Fsearch%3Fq%3Dmountains&psig=AOvVaw2U8fs34ScvMVRG8nz8K-yL&ust=1691506326827000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLD9y6TmyoADFQAAAAAdAAAAABAE",
-            category: "adventure",
+            category: ["adventure", "waterfalls"],
             description: "The beautiful Hvalfjörður, with its winding roads and pristine hiking paths, is being rediscovered by travelers and developers alike."
         },
         

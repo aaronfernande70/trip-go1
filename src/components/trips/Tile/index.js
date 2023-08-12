@@ -19,8 +19,11 @@ export default function Tile({ imageSrc, imageAlt, name, description, category }
         />
         <div className="flex flex-col gap-2">
           <div className="tile-top-bar my-2">
-            <div className="chips-container ">
-              <Chip>{category}</Chip>
+            <div className="chips-container flex gap-2">
+              {category.map((category) => {
+                  return(<Chip key={category}>{category}</Chip>)
+                })
+              }
             </div>
           </div>
           <Title primitive={"h2"} className="text-3xl font-bold">{name}</Title>
