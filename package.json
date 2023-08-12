@@ -21,6 +21,7 @@
     "tailwindcss": "3.3.2"
   },
   "devDependencies": {
+    "@types/node": "^20.4.10",
     "@types/react": "18.2.15"
   }
 }
