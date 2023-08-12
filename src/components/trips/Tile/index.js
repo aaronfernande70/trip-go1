@@ -1,8 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import Title from "../../../Typography/Title";
-import Body from "../../../Typography/Body";
-// import Body from "../../../Typography/Body";
 import Chip from '../../common/Chip';
 
 
@@ -26,7 +24,7 @@ export default function Tile({ imageSrc, imageAlt, name, description, category }
             </div>
           </div>
           <Title primitive={"h2"} className="text-3xl font-bold">{name}</Title>
-          <Body>{description}</Body>
+          <p>{description}</p>
         </div>
       </div>
     </>
