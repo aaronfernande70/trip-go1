@@ -9,7 +9,7 @@ import placeholder from "../../../resources/images/placeholder.jpg";
 export default function Tile({ imageSrc, imageAlt, name, description, category }) {
   return (
     <>
-      <div className="flex flex-col w-80 justify-around gap-5 py-3 border items-center bg-gray-950 p-3 border-gray-800 rounded">
+      <div className="flex flex-col w-80 justify-around gap-5 py-4 border items-center bg-white shadow-sm p-3 border-gray-200 rounded">
         <Image
           className="rounded-md mt-3"
           quality={100}
@@ -18,7 +18,7 @@ export default function Tile({ imageSrc, imageAlt, name, description, category }
           height={200}
           width={250}
         />
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 px-4">
           <div className="tile-top-bar my-2">
             <div className="chips-container flex gap-2">
               {category.map((category) => {
@@ -27,8 +27,8 @@ export default function Tile({ imageSrc, imageAlt, name, description, category }
               }
             </div>
           </div>
-          <Title primitive={"h2"} className="text-3xl font-bold">{name}</Title>
-          <p>{description}</p>
+          <Title primitive={"h2"} className="text-3xl font-semibold">{name}</Title>
+          <p className="font-normal">{description}</p>
         </div>
       </div>
     </>
