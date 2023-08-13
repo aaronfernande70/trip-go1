@@ -9,8 +9,9 @@ import placeholder from "../../../resources/images/placeholder.jpg";
 export default function Tile({ imageSrc, imageAlt, name, description, category }) {
   return (
     <>
-      <div className="flex flex-col sm:flex-row gap-5 py-3 border items-center bg-gray-950 p-3 border-gray-800 rounded">
+      <div className="flex flex-col w-80 justify-around gap-5 py-3 border items-center bg-gray-950 p-3 border-gray-800 rounded">
         <Image
+          className="rounded-md mt-3"
           quality={100}
           src={placeholder}
           alt={imageAlt}
