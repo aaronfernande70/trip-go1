@@ -9,7 +9,7 @@ import placeholder from "../../../resources/images/placeholder.jpg";
 export default function Tile({ imageSrc, imageAlt, name, description, category }) {
   return (
     <>
-      <div className="flex flex-col w-80 justify-around gap-5 py-4 border items-center bg-white shadow-sm p-3  rounded-md">
+      <div className="flex flex-col w-40 justify-around gap-5 py-4 border items-center bg-white shadow-sm p-3  rounded-md">
         <Image
           className="rounded-md mt-3"
           quality={100}
@@ -27,8 +27,8 @@ export default function Tile({ imageSrc, imageAlt, name, description, category }
               }
             </div>
           </div>
-          <Title primitive={"h2"} className="text-3xl font-semibold">{name}</Title>
-          <p className="font-normal">{description}</p>
+          <Title primitive={"h2"} className="text-base text-nowrap  font-semibold">{name}</Title>
+          <p className="font-normal text-xs text-ellipsis h-16 overflow-y-hidden">{description}</p>
         </div>
       </div>
     </>
