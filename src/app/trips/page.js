@@ -73,12 +73,12 @@ export default function Home() {
   return (
     <main className="bg-white text-black ">
       <div className='pt-5'>
-          <Title primitive={"h1"} className="text-4xl px-6 md:px-20 font-semibold">Trips</Title>
+          <Title primitive={"h1"} className="text-4xl px-6 font-semibold">Trips</Title>
           <div className='border-b-2 border-b-gray-200 px-12 md:px-24'>
             <Filter/>
           </div>
       </div>
-      <div className="flex flex-wrap justify-around gap-y-5 pt-6 bg-gray-100 " > 
+      <div className="md:px-24 flex flex-wrap justify-around gap-y-5 pt-6 bg-gray-100 " > 
         {trips.map((trip)=>{
             return(
                 <>
