@@ -71,7 +71,7 @@ export default function Home() {
                     <Filter/>
                 </div>
             </div>
-            <div className="md:px-24 flex flex-wrap justify-around gap-y-5 pt-6 bg-gray-100 " > 
+            <div className="px-5 md:px-24 flex flex-wrap justify-around gap-y-5 pt-6 bg-gray-100 " > 
                 {trips.map((trip)=>{
                     return(
                         <>
