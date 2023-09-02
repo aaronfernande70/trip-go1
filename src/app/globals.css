@@ -18,11 +18,7 @@
 
 body {
   font-weight: 500;
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
+  color: rgb(39, 39, 39);
+  background: white
     rgb(var(--background-start-rgb));
 }
