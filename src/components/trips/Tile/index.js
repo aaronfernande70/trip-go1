@@ -14,7 +14,7 @@ export default function Tile({
   category,
 }) {
   return (
-    <div className="flex flex-col w-40 md:w-72 justify-around gap-5 py-4 border items-center bg-white shadow-sm p-3  rounded-md">
+    <div className="flex flex-col w-44 md:w-72 justify-around gap-5 py-4 border items-center bg-white shadow-sm p-3  rounded-md">
       <Link href="/trips/trip">
         <Image
           className="rounded-md mt-3"
